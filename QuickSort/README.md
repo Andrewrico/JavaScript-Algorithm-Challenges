@@ -41,21 +41,18 @@ The `QuickSort` class extends the `Sort` class and implements the quicksort algo
 
 ## Example Usage
 
-<iframe height="300" style="width: 100%;" scrolling="no" title="Sorting Algorithm with Javascript" src="https://codepen.io/Andrew-Rico/embed/QWodLex?default-tab=html%2Cresult" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
-  See the Pen <a href="https://codepen.io/Andrew-Rico/pen/QWodLex">
-  Sorting Algorithm with Javascript</a> by Andrew Rico (<a href="https://codepen.io/Andrew-Rico">@Andrew-Rico</a>)
-  on <a href="https://codepen.io">CodePen</a>.
-</iframe>
-
 
 ```javascript
-const arrayToSort = [5, 3, 7, 1, 8, 2, 4, 6];
-const quickSort = new QuickSort();
+    const arrayToSort = [5, 3, 7, 1, 8, 2, 4, 6];
+    const quickSort = new QuickSort();
 
-// Custom visitingCallback to log each visited element
-const visitingCallback = (element) => console.log('Visiting element:', element);
+    // Custom visitingCallback to log each visited element
+    const visitingCallback = (element) => console.log('Visiting element:', element);
 
-// Sorting the array using QuickSort
-const sortedArray = quickSort.sort(arrayToSort, { visitingCallback });
+    // Sorting the array using QuickSort
+    const sortedArray = quickSort.sort(arrayToSort, { visitingCallback });
 
-console.log('Sorted Array:', sortedArray);
+    console.log('Sorted Array:', sortedArray);
+```
+
+[Sorting Algorithm with Javascript on CodePen](https://codepen.io/Andrew-Rico/pen/QWodLex)

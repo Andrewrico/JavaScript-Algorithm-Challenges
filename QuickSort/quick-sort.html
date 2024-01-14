@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JavaScript Algorithm Challenges | Quick Sort</title>
+  <link rel="stylesheet" href="./quick-sort.css">
+</head>
+<body>
+
+
+  <div id="quick-sort-container"></div>
+
+  <script src="./quick-sort.js"></script>
+
+  <script>
+    const arrayToSort = [5, 3, 7, 1, 8, 2, 4, 6];
+    const initialArray = arrayToSort;
+    const quickSort = new QuickSort();
+    const visitingCallback = (element) => console.log('Visiting element:', element);
+    const sortedArray = quickSort.sort(arrayToSort, { visitingCallback });
+    const resultContainer = document.getElementById('quick-sort-container');
+
+    console.log('Sorted Array:', sortedArray);
+    
+      resultContainer.innerHTML = `
+        <code class="editor">   
+          <span class="const">const</span> <span class="word">arrayToSort</span> = [<span class="array">${initialArray.join(', ')}</span>]; <br><br>     
+          <span class="sorted">Sorted Array: (${initialArray.length}) [${sortedArray.join(', ')}] </span>    
+        </code>
+      `;
+  </script>
+
+</body>
+</html>

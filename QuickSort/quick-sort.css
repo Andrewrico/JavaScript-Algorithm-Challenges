@@ -1,0 +1,55 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+
+  .container {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 600px;
+  }
+
+  h2 {
+    color: #333;
+    text-align: center;
+  }
+
+  code {
+    display: block;
+    background-color: #f9f9f9;
+    padding: 1rem;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    overflow-x: auto;
+  }
+
+  .sorted{
+    background: #262626;
+    color:  rgb(255, 255, 255);
+  }
+
+  .editor {
+    background: #262626;
+    color:  #fff;
+  }
+
+  .const {
+    color: rgb(122, 122, 226);
+  }
+
+  .word {
+    color: cyan
+  }
+
+  .array {
+    color: orange
+  }
